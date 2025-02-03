@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fbe8e8;
+    margin: 0;
+}
+
+
+.name {
+    font-size: 200px; 
+    font-weight: bold;
+    color: #ff6f61;
+    margin-bottom: 30px; 
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1), 0 0 25px rgba(255, 111, 97, 0.5); /* Sombra suave para resaltar el texto */
+    letter-spacing: 2px; 
+    animation: fadeIn 2s ease-in-out; 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+}
+
+.question {
+    font-size: 28px;
+    color: #ff6f61;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid #ff6f61;
+    background-color: white;
+    color: #ff6f61;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6f61;
+    color: white;
+}
+
+.yes {
+    font-weight: bold;
+}
+
+.no {
+    font-weight: bold;
+    position: relative;
+    transition: left 0.3s ease, top 0.3s ease;
+}
+
+.card {
+    display: none;
+    font-size: 24px;
+    color: #ff6f61;
+    background-color: #fff;
+    border: 2px solid #ff6f61;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.message {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff6f61;
+    margin-bottom: 15px;
+}
+
+.extra-message {
+    font-size: 22px;
+    color: #ff6f61;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #ffe6e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+    max-width: 500px;
+    width: 100%;
+}
