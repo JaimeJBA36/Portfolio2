@@ -9,14 +9,13 @@ body {
     margin: 0;
 }
 
-
 .name {
     font-size: 200px; 
     font-weight: bold;
     color: #ff6f61;
     margin-bottom: 30px; 
     text-align: center;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1), 0 0 25px rgba(255, 111, 97, 0.5); /* Sombra suave para resaltar el texto */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1), 0 0 25px rgba(255, 111, 97, 0.5); 
     letter-spacing: 2px; 
     animation: fadeIn 2s ease-in-out; 
 }
