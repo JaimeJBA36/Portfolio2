@@ -5,7 +5,7 @@ const box = document.querySelector('.box');
 
 let lastX = 0;
 let lastY = 0;
-let yesBtnSize = 18; // Tamaño inicial del botón "Sí"
+let yesBtnSize = 18;
 
 noBtn.addEventListener('mouseover', () => {
     const boxRect = box.getBoundingClientRect();
@@ -31,9 +31,8 @@ noBtn.addEventListener('mouseover', () => {
     noBtn.style.top = `${randomY}px`;
 });
 
-// Cuando logres hacer clic en "No", el botón "Sí" se agranda
 noBtn.addEventListener('click', () => {
-    yesBtnSize += 10; // Aumenta el tamaño progresivamente
+    yesBtnSize += 10; 
     yesBtn.style.fontSize = `${yesBtnSize}px`;
     yesBtn.style.padding = `${yesBtnSize / 2}px ${yesBtnSize}px`;
 });
